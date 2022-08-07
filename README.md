@@ -1,2 +1,2 @@
 # Headless scraper
-Wrapper functions from headless scraping with Puppeteer
+Wrapper functions for headless scraping with Puppeteer
