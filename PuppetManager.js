@@ -43,8 +43,7 @@ module.exports = function PuppetManager(debug, proxyMode) {
         browser: {
             args: [
                 "--window-size=1920,1080",
-                // Le Headless Proxy lance un proxy HTTP/HTTPS sur 127.0.0.1:3128 et va proxy toutes les requêtes à
-                // 64.58.126.143:8011 (proxy.zyte.com) (cf. cron/screenshot/headless_proxy/config.toml)
+                // Le Headless Proxy lance un proxy HTTP/HTTPS sur 127.0.0.1:PORT et va proxy toutes les requêtes à proxy.zyte.com
                 (this.proxyMode === true) ? `--proxy-server=${this.proxyConf.bindIp}:${this.proxyConf.bindPort}` : ""
             ]
         }
